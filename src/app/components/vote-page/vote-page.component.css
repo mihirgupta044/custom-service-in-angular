@@ -1,0 +1,8 @@
+.bq-primary .bq-title {
+    color: #f35b5b!important;
+    font-size: 1.5rem;
+}
+.bq-primary {
+    border-left: 3px solid #ffa85d!important;
+    margin-left: 2px;
+}

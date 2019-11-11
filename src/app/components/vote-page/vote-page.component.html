@@ -1,0 +1,16 @@
+<div class="fluid-container">
+  <div class="row">
+    <div class="col-md-6">
+				<blockquote class="blockquote bq-primary">
+          <p class="bq-title">Please Submit Your Choice:</p>
+          <p><strong>Pick Your favourite author:</strong> </p>
+          <div *ngFor="let authr of authrs">       <!--authrs array name.-->
+            <input type="radio" name="nameOfAuthors" [(ngModel)]="nameOfAuthors" value="{{authr}}"><i>{{authr}}</i><br>
+          </div>
+				</blockquote>
+        <button type="button" (click)='Submit()'>Submit</button>
+        <div>Selected Author name is:</div><b><i>{{nameOfAuthors}}</i></b><br>
+        {{"Total Votes : "+count}}
+      </div>
+    </div>
+  </div>
